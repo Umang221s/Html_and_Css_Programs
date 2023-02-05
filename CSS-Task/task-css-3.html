@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-css-3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Caveat', cursive;
+            color: rgba(0, 0, 0, 0.4);
+        }
+        body{
+            background-image:linear-gradient( #0D324D ,#BDD4E7);
+            
+        }
+
+        .main {
+            width: 1020px;
+            height: 520px;
+            margin: 40px auto;
+            padding: 0px 40px 40px 40px;
+            display: flex;
+            background-color: rgb(231, 241, 237);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4),-5px -5px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .box {
+            height: 100%;
+            width: 250px;
+            margin-left: 20px;
+
+        }
+        #secound{
+            border-radius: 40px;
+        }
+        #thard{
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+        #forth{
+            border-radius: 100px;
+        }
+
+        .box h4 {
+            text-align: center;
+            font-size: 18px;
+            padding: 12px;
+        }
+
+        .semi-first {
+            border: 3px solid white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            transition: 1s;
+        }
+
+        .semi-first:hover {
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .semi-first img {
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.4);
+            background-color: #fff;
+            margin: 10px 0px 0px 10px;
+            transition: 1s;
+        }
+
+        .semi-first img:hover {
+            transform: scale(1.1);
+        }
+
+        .semi-first h3 {
+            text-align: center;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .semi-first p {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .semi-first button {
+            margin: 20px 0px 20px 55px;
+            width: 100px;
+            padding: 5px;
+            color: #fff;
+            background-color: darkcyan;
+            border: none;
+            border-radius: 3px;
+            opacity: 0.4;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .semi-first button:hover {
+            opacity: 1;
+            background-color: darkcyan;
+            transform: rotate(360deg) scale(1.5);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <h4>BOX</h4>
+            <div class="semi-first" id="first">
+                <img src="task images/windmill.png" alt="" height="90%" width="90%">
+                <h3>DOLOR AMET LOREM IMSUM SIT</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aut quia sunt, ipsa praesentium facere!
+                </p>
+                <button type="submit">Read More</button>
+            </div>
+        </div>
+        <div  class="box">
+            <h4>NAUTILUS</h4>
+            <div class="semi-first" id="secound">
+                <img src="task images/setelight3.png" alt="" height="90%" width="90%">
+                <h3>DOLOR AMET LOREM IMSUM SIT</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aut quia sunt, ipsa praesentium facere!
+                </p>
+                <button type="submit">Read More</button>
+            </div>
+        </div>
+        <div  class="box">
+            <h4>TAG</h4>
+            <div class="semi-first" id="thard">
+                <img src="task images/monkey.png" alt="" height="90%" width="90%">
+                <h3>DOLOR AMET LOREM IMSUM SIT</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aut quia sunt, ipsa praesentium facere!
+                </p>
+                <button type="submit">Read More</button>
+            </div>
+        </div>
+        <div class="box">
+            <h4>CAPCULE</h4>
+            <div class="semi-first" id="forth">
+                <img src="task images/testtube.png" alt="" height="90%" width="90%">
+                <h3>DOLOR AMET LOREM IMSUM SIT</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aut quia sunt, ipsa praesentium facere!
+                </p>
+                <button type="submit">Read More</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-task-8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          
+
+        }
+
+        body {
+            background-color: brown;
+        }
+
+        #main {
+            height: 800px;
+            width: 80%;
+            margin: 25px auto;
+            background-image: url("All images/food.jpg");
+            background-size: cover;
+           
+        }
+
+        .form {
+            width: 70%;
+            background-color: rgb(229, 228, 228);
+            height: 100%;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        .headding {
+            /* border: 1px solid red; */
+            width: 100%;
+        }
+
+        .headding h1 {
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .headding p {
+            font-size: 14px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 5px;
+
+        }
+
+
+
+        /* secounf box(firstname and lastname)  */
+        .main1 {
+            /* border: 1px solid red; */
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+/* 
+        .fname {
+            border: 1px solid black;
+        } */
+
+        .fname label {
+            display: block;
+        }
+
+        .fname input {
+            width: 250px;
+            padding: 7px;
+            margin-top: 5px;
+            border: none;
+        }
+
+        /* .lname {
+            border: 1px solid black;
+        } */
+
+        .lname label {
+            display: block;
+        }
+
+        .lname input {
+            width: 250px;
+            padding: 7px;
+            margin-top: 5px;
+            border: none;
+        }
+
+
+
+
+        /* thrid box(email)  */
+
+        .email{
+            margin-top: 35px;
+        }
+        .email label{
+            display: block;
+        }
+        .email input{
+            width: 100%;
+            padding: 7px;
+            margin-top: 5px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+
+
+
+        /* forth box(number and website)  */
+        .main2{
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+        }
+        /* .number {
+            border: 1px solid black;
+        } */
+
+        .number label {
+            display: block;
+        }
+
+        .number input {
+            width: 250px;
+            padding: 7px;
+            margin-top: 5px;
+            border: none;
+        }
+
+        /* .website {
+            border: 1px solid black;
+        } */
+
+        .website label {
+            display: block;
+        }
+
+        .website input {
+            width: 250px;
+            padding: 7px;
+            margin-top: 5px;
+            border: none;
+        }
+
+
+
+
+        /* fifth box(password and re-password)  */
+        .main3{
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+        }
+        /* .password {
+            border: 1px solid black;
+        } */
+
+        .password label {
+            display: block;
+        }
+
+        .password input {
+            width: 250px;
+            padding: 7px;
+            margin-top: 5px;
+            border: none;
+        }
+
+        /* .re-password {
+            border: 1px solid black;
+        } */
+
+        .re-password label {
+            display: block;
+        }
+
+        .re-password input {
+            width: 250px;
+            padding: 7px;
+            margin-top: 5px;
+            border: none;
+        }
+
+
+
+
+        /* sixth box (chackbox)  */
+        .chackbox{
+            margin-top: 35px;
+        }
+        .chackbox span{
+            font-size: 13px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        button{
+            margin-top: 35px;
+            font-size: 17px;
+            width: 150px;
+            padding:10px;
+            border-radius: 5px;
+            background-color: brown;
+            color: white;
+            border: none;
+            position: relative;
+            transition: 0.5s;
+        }
+        button:hover{
+            transform: scale(1.1);
+            font-size: 20px;
+        }
+        input:focus{
+           outline: none;
+        }
+        /* button::before{
+            content: "";
+            width: 20px;
+            height: 40px;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: ;
+            left: -50;
+            top: 0;
+            right: 0;
+            animation: moveleftright 1s linear infinite;
+        } */
+     
+     
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <form action="html-submit.html" class="form">
+            <div class="headding">
+                <h1>Register</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus itaque vero ad.</p>
+            </div>
+            <div class="main1">
+                <div class="fname">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" placeholder="E.g.John" autofocus>
+                </div>
+                <div class="lname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" placeholder="E.g.Smith">
+                </div>
+            </div>
+            <div class="email">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" placeholder="E.g.john@your-Domain.com">
+            </div>
+            <div class="main2">
+                <div class="number">
+                    <label for="number">Phone Number</label>
+                    <input type="tel" name="number" placeholder="+00 000 000 000" maxlength="12" >
+                </div>
+                <div class="website">
+                    <label for="website">Website</label>
+                    <input type="text" name="website" placeholder="E.g.http//google.com">
+                </div>
+            </div>
+            <div class="main3">
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Your Password" maxlength="12" >
+                </div>
+                <div class="re-password">
+                    <label for="re-password">Re-Type-Website</label>
+                    <input type="text" name="re-password" placeholder="Your Password">
+                </div>
+            </div>
+            <div class="chackbox">
+                <input type="checkbox" name="chackbox"><span> Creating an account Means You're Okey With our <a href="tearm.html">Tearms and Condition</a>and aur <a href="policy.html">Privacy Policy</a></span>
+            </div>
+
+    
+            <button type="submit"><span></span> Register</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

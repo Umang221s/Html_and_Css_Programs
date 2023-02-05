@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>form-task-12</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+        }
+
+        .main {
+            width: 1000px;
+            height: 600px;
+            /* border: 1px solid black; */
+            background-color: white;
+            z-index: -11;
+            margin: 30px auto;
+            position: relative;
+            box-shadow: 1px 20px 40px 7px rgb(0, 0, 0);
+        }
+
+
+        /* 1st right side contanner (linoier gradiant function) */
+
+        .linier {
+            /* border: 1px solid black; */
+            width: 500px;
+            height: 600px;
+            position: absolute;
+            overflow: hidden;
+            margin-left: 500px;
+        }
+
+        .c1 {
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            position: absolute;
+            left: -220px;
+            top: -150px;
+            background-image: linear-gradient(#2c5fbe, #5966c8, #7b6dd1, #9975d9, #b67ce0, #d379d6, #ec78c9, #ff79bb, #ff7b94, #ff8f67, #ffae39, #edcf0e);
+            ;
+            z-index: 5;
+        }
+
+        .c2 {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            position: absolute;
+            right: -50px;
+            top: -70px;
+            background-image: linear-gradient(#14fbfb, #00e3ff, #00c8ff, #00aaff, #0088ff, #4177fc, #6663f5, #8549e8, #9d43eb, #b539ed, #cc2bee, #e30eed);
+            z-index: -10;
+        }
+
+        .c3 {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            position: absolute;
+            right: -30px;
+            top: 60px;
+            background-image: linear-gradient(#14fbfb, #00e3ff, #00c8ff, #00aaff, #0088ff, #4177fc, #6663f5, #8549e8, #9d43eb, #b539ed, #cc2bee, #e30eed);
+            z-index: -8;
+        }
+
+        .c4 {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            position: absolute;
+            right: -60px;
+            top: 170px;
+            background-image: linear-gradient(#14fbfb, #00e3ff, #00c8ff, #00aaff, #0088ff, #4177fc, #6663f5, #8549e8, #9d43eb, #b539ed, #cc2bee, #e30eed);
+            z-index: -6;
+        }
+
+        .c5 {
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            position: absolute;
+            right: 40px;
+            top: 250px;
+            background-image: linear-gradient(#14fbfb, #00e3ff, #00c8ff, #00aaff, #0088ff, #4177fc, #6663f5, #8549e8, #9d43eb, #b539ed, #cc2bee, #e30eed);
+            z-index: -7;
+        }
+
+        .c6 {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            position: absolute;
+            right: -160px;
+            top: 400px;
+            background-image: linear-gradient(#14fbfb, #00e3ff, #00c8ff, #00aaff, #0088ff, #4177fc, #6663f5, #8549e8, #9d43eb, #b539ed, #cc2bee, #e30eed);
+            z-index: -8;
+        }
+
+        .c7 {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            position: absolute;
+            right: 255px;
+            top: 380px;
+            background-image: linear-gradient(#14fbfb, #00e3ff, #00c8ff, #00aaff, #0088ff, #4177fc, #6663f5, #8549e8, #9d43eb, #b539ed, #cc2bee, #e30eed);
+            z-index: -7;
+        }
+
+
+
+        /* contain for right side  */
+
+        .containt {
+            width: 300px;
+            position: absolute;
+            z-index: 6;
+            color: #fff;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            top: 170px;
+            left: 90px;
+        }
+
+        .containt::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            position: absolute;
+            left: -100px;
+            top: 10px;
+            transform: rotate(45deg);
+        }
+
+        .containt::after {
+            content: "";
+            width: 1px;
+            height: 60px;
+            background-color: white;
+            position: absolute;
+            left: -50px;
+            top: -10px;
+            transform: rotate(90deg);
+        }
+
+        .containt h1 {
+            font-size: 30px;
+        }
+
+        .containt h1::after {
+            content: "";
+            width: 1px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            left: -10px;
+            top: 15px;
+            transform: rotate(90deg);
+        }
+
+        .containt p {
+            font-size: 10px;
+            margin-top: 10px;
+        }
+
+
+
+        /* play icon effect  */
+
+        .icon {
+            background-color: #fff;
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            border-radius: 50%;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+        }
+        .icon i{
+            font-size: 20px;
+            color: #2c5fbe;
+            line-height: 50px;
+          
+        }
+        .effect{
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+        }
+        .icon:hover .effect{
+            transform: scale(2.5);
+        }
+
+
+
+
+
+        /* left side form and containt  */
+
+        .linier1 {
+            width: 499px;
+            height: 598px;
+            position: relative;
+            border: 1px solid white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+        /* 1st containt facebook and xing (or) */
+        .containt1 {
+            width: 300px;
+            margin: 40px auto 10px auto;
+        }
+
+        .containt1 h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+        }
+
+        .containt1 h2 i {
+            color: rgba(247, 39, 39, 0.7);
+            margin-right: 10px;
+
+        }
+
+        .containt1 p {
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.6);
+            margin-top: 30px;
+        }
+
+        .btn {
+            width: 450px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .btn button:first-child {
+            padding: 10px;
+            font-size: 12px;
+            box-sizing: border-box;
+            background-color: #0088ff;
+            color: #fff;
+            width: 150px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+      
+
+        .fa-brands {
+            margin-right: 10px;
+            color: white;
+        }
+
+        .btn button:last-child {
+            padding: 10px;
+            font-size: 12px;
+            box-sizing: border-box;
+            background-color: darkgreen;
+            width: 150px;
+            margin-left: 10px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .linier1 .or {
+            margin-top: 25px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+
+        /* start form email and password  */
+
+        .email {
+            margin-top: 20px;
+
+        }
+
+        .email label {
+            display: block;
+            margin-left: 90px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .email input {
+            margin-left: 90px;
+            margin-top: 10px;
+            width: 320px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        }
+
+        .email input:focus {
+            outline: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+
+        }
+
+        .password label {
+            display: block;
+            margin-left: 90px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .password input {
+            margin-left: 90px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 320px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        }
+
+        .password input:focus {
+            outline: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+
+        }
+
+        .chackboxf {
+            width: 330px;
+            font-size: 14px;
+            margin: auto;
+        }
+
+        .chackboxf span {
+            margin-left: 120px;
+        }
+
+        .login {
+            width: 320px;
+            margin: auto;
+            margin-top: 30px;
+
+        }
+
+        .login button:first-child {
+            padding: 10px;
+            width: 110px;
+            box-sizing: border-box;
+            border: none;
+            background-image: linear-gradient(to right, #2c5fbe, #5966c8, #7b6dd1, #9975d9, #b67ce0, #d379d6, #ec78c9, #ff79bb, #ff7b94, #ff8f67, #ffae39, #edcf0e);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login button:last-child {
+            padding: 10px;
+            width: 110px;
+            box-sizing: border-box;
+            border: none;
+            margin-left: 30px;
+            background-image: linear-gradient(to right, #2c5fbe, #5966c8, #7b6dd1, #9975d9, #b67ce0, #d379d6, #ec78c9, #ff79bb, #ff7b94, #ff8f67, #ffae39, #edcf0e);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .policy {
+            /* width: 320px; */
+            font-size: 12px;
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        /* last name Design  */
+        .names {
+            color: rgb(2, 78, 166);
+            width: 320px;
+            margin: 70px auto;
+            font-size: 13px;
+            display: block;
+            text-align: center;
+        }
+
+        .names span {
+            color: darkgreen;
+            font-size: 16px;
+        }
+
+     
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="linier">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+            <div class="c5"></div>
+            <div class="c6"></div>
+            <div class="c7"></div>
+            <div class="containt">
+                <h1>How it works?</h1>
+                <p>Create your free search profile and let us know your wishes for the perfect apartment.</p>
+                
+                <div class="icon">
+                    <i class="fa-solid fa-play"></i>
+                    <div class="effect"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <form action="sumbit,html">
+            <div class="linier1">
+                <div class="containt1">
+                    <h2><i class="fa-solid fa-truck"></i>Housy</h2>
+                    <p>Welcome Back, Please login to Your account.</p>
+                </div>
+                <div class="btn">
+                    <button type="button"><i class="fa-brands fa-facebook-f"></i>Login with facebook</button>
+                    <button type="button"><i class="fa-brands fa-xing"></i>Login with Xing</button>
+                </div>
+                <p class="or">--Or--</p>
+
+
+
+                <div class="email">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" required autofocus>
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required maxlength="10">
+                </div>
+                <div class="chackboxf">
+                    <input type="checkbox" name="checkbox" checked>
+                    <label for="checkbox"> Remember me</label>
+                    <span>Forgot password</span>
+                </div>
+                <div class="login">
+                    <button type="submit" name="login">Login</button>
+                    <button type="button" name="signup">Sign up</button>
+                </div>
+                <div class="policy">
+                    <span> Creating an account Means You're Okey With our <a href="tearm.html">Tearms and
+                            Condition</a>and aur <a href="policy.html">Privacy Policy</a></span>
+                </div>
+                <div class="names">
+                    @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

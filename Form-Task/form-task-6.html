@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>form-task-6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: blueviolet;
+            background-size: cover;
+            background-repeat: no-repeat;
+          
+        }
+
+        .main {
+            border: 1px solid white;
+            width: 900px;
+            height: 450px;
+            margin: auto;
+            margin-top: 8%;
+            display: flex;
+            
+            
+        }
+        .image{
+            height: 449px;
+            width: 550px;
+            background-image:  url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" ) ;
+            background-size: 600px 500px;
+            background-repeat: no-repeat;
+            border: 1px solid white;
+           margin-left: 0px;
+           opacity: 0.7;
+         
+        }
+        .divform{
+            background-color: white;
+            width: 450px;
+            height: 449px;
+        }
+      
+        .form h1{
+            margin: 50px 0px 0px 25px;
+            width: 200px;
+            position: relative;
+            font-family: sans-serif;
+            font-size: 30px;
+            color:rgba(0, 0, 0, 0.7);
+
+        }
+        .form h1::after{
+            content: "";
+            width: 20%;
+            height: 5px;
+            left: 0;
+            bottom: -7px;
+            background-color: blueviolet;
+            position: absolute;
+            
+        }
+        ::placeholder{
+            font-size: 18px;
+        }
+        .email{
+           
+            margin: 50px 0px 0px 20px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+            width: 350px;
+
+        }
+        .email input{
+            border: none;
+            padding: 7px;
+            margin-left: 5px;
+            width: 325px;
+        }
+        input:focus{
+            outline: none;
+            border-bottom-color: blueviolet;
+            
+        }
+        .email i{
+            font-size: 20px;
+            color: blueviolet;
+        }
+        .password{
+           
+            margin: 30px 0px 0px 20px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+            width: 350px;
+        }
+        .password input{
+            border: none;
+            padding: 7px;
+            margin-left: 5px;
+            position: relative;
+            width: 320px;
+        }
+        .password i{
+            font-size: 20px;
+            color: blueviolet;
+        }
+        .forgot{
+            margin: 10px 0px 0px 20px;
+            color: blueviolet;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 900;
+            cursor: pointer;
+
+        }
+        button{
+            color: white;
+            background-color: blueviolet;
+            width: 350px;
+            padding: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            margin: 50px 0px 0px 25px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .sign p{
+            width: 300px;
+            margin: 40px auto;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        .sign p span{
+            color: blueviolet;
+            cursor: pointer;
+        }
+             /* Last Div Design By  */
+             .last {
+            /* border: 1px solid white; */
+            color: white;
+            width: 1000px;
+            font-size: 13px;
+            margin: 2% auto;
+            display: block;
+          letter-spacing: 6px;
+          text-align: center;
+
+        }
+
+
+        .last span {
+            color: black;
+            font-size: 16px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="main">
+       
+        <div class="divform">
+            <form class="form" action="formsubmit.html" target="_blank">
+                <h1>Login</h1>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i><input type="email" autofocus name="email" placeholder="Enter Your Email">
+                </div>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i> <input type="password" name="password" placeholder="Enter Your Password">
+                </div>
+                <div class="forgot">
+                    <p>Forgot Password ?</p>
+                </div>
+                <button type="submit">Login</button>
+                <div class="sign">
+                <p>Dont have an account?<span> Signup now</span></p>
+            </div>
+            </form>
+        </div>
+        <div class="image">
+        </div>
+    </div>
+    <div class="last">
+        @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+    </div>
+
+</body>
+
+</html>

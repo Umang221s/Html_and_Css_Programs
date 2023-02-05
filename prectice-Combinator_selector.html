@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>more Selectors</title>
+<style>
+    h1{
+        background-color: blue;
+        color:gray;
+        text-align: center;
+        font-weight: bold;
+    }
+    div ul p{
+        color: aqua;
+        background-color: rgb(75, 226, 45);
+    }
+
+    div li{
+        color: darkmagenta;
+        background-color: dimgray;
+        font-weight: bold;
+    }
+
+    div li p{
+        color: red;
+        background-color: darkslategray;
+        font-weight: bold;
+        /* DIv LI P ===> div ni andar list ni andar pera ma aa property lagu pade  */
+    }
+    
+div > p{
+    color: green;
+    background-color:black;
+    font-weight: bold;
+    /* DIV > P ===> DIV NI ANDAR DIRECT CHILD HOY ENA MATE LAGU PADE*/
+}
+div + p{
+    color: yellow;
+    background-color: brown;
+    /* DIV + P ===> j maro peragraph che tenu pachad nu selector div hoy tema lagu pade*/
+}
+
+</style>
+</head>
+<body>
+<h1>This is my more Selectors</h1>
+<div class="contanner">
+    <div class="item">
+        <ul>
+            <li class="lup"><p>This is my peragraph</p></li>
+            <li>This is secound pera</li>
+            <p>This is thrid pera</p>
+        </ul>
+        <p>This is Forth pera</p>
+    </div>
+    <p>This is Fifth pera</p>
+</div>
+<p>Outdoor pera</p>
+</body>
+</html>

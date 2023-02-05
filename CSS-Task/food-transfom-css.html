@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extra-css-13</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("task images/background-food.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            display: flex;
+            margin: 180px auto;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .x{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+           
+        }
+        .x img:hover{
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        .x img{
+            border-radius: 50%;
+            opacity: 0.8;
+            transition: 1s;
+        }
+        .x h1{
+            position: absolute;
+            bottom: 50px;
+            font-size: 30px;
+            left: 30px;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="x">
+            <img src="task images/food1.jpg" alt="" height="100%" width="100%">
+            <h1>The Delisius Food</h1>
+        </div>
+        <div class="x">
+            <img src="task images/food2.jpg" alt="" height="100%" width="100%">
+            <h1>The Delisius Food</h1>
+        </div>
+        <div class="x">
+            <img src="task images/food3.jpg" alt="" height="100%" width="100%">
+            <h1>The Delisius Food</h1>
+        </div>
+        <div class="x">
+            <img src="task images/food4.jpg" alt="" height="100%" width="100%">
+            <h1>The Delisius Food</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

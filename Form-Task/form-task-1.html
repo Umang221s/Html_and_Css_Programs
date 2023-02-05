@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-task-1</title>
+    <style>
+        body {
+            background-image: linear-gradient(to left , rgb(220, 18, 227),rgb(110, 80, 186));
+            background-repeat: no-repeat;
+            height: 600px;          
+        }
+        .form {
+            background-color: white;
+            width: 350px;
+            height: 450px;
+            border-radius: 10px;
+            border: 1px solid white;
+            margin: auto;
+            margin-top: 80px;
+        }
+
+
+/* TItle and this div caption  */
+
+        .caption {
+            /* border: 2px solid black; */
+            margin-top: 60px;
+        }
+        .caption span {
+
+            justify-content: center;
+            display: flex;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        
+
+/* Two butten and this Propertis (Login & signup)  */
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        #login {
+            font-size: 17px;
+            background-image: linear-gradient(to left , rgb(220, 18, 227),rgb(110, 80, 186));
+            border-radius: 5px;
+            width: 150px;
+            font-weight: bold;
+            color: white;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+        }
+        #signup {
+            font-size: 17px;
+            border-width: thin;
+            background-color: white;
+            width: 150px;
+            font-weight: bold;
+            border-radius: 0px 5px 5px 0px;
+            border-left: none;
+            cursor: pointer;    
+        }
+
+/* all placeholder values and size  */
+
+
+        ::placeholder {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: 3px;
+        }
+
+/* Email div and this latter  */
+
+
+        .ediv {
+            /* border: 1px solid black; */
+            margin-top: 30px;
+            justify-content: center;
+            display: flex;
+            height: 50px;
+        }
+        #email {
+            height: 40px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+/* password div and this latter  */
+
+
+        .pdiv {
+            margin-top: 15px;
+            /* border: 1px solid black; */        
+        }
+        #password {
+            height: 40px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin-left: 20px;
+        }
+
+/* forget password latters  */
+
+
+        .fpass {
+            width: 200px;
+            font-size: 15px;
+            margin-left: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(233, 11, 241);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+/* login butten an hover  */
+
+        .btn2{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 20px;
+        }
+        #login2{
+            font-size: 17px;
+            background-image: linear-gradient(to left , rgb(220, 18, 227),rgb(110, 80, 186));
+            border-radius: 5px;
+            width: 300px;
+            font-weight: bold;
+            color: white;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        #login2:hover{
+            opacity: 1;
+        }
+
+/* signup and membership latter  */
+
+        .member{
+            margin-top: 20px;
+            justify-content: center;
+            display: flex;
+        }
+        .member span:first-child{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .member span:last-child{
+            color: rgb(233, 11, 241);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        /* Last Div Design By  */
+        .last {
+            /* border: 1px solid white; */
+            color: white;
+            width: 440px;
+            font-size: 13px;
+            margin: 5% auto;
+            display: block;
+
+        }
+
+
+        .last span {
+            color: black;
+            font-size: 16px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <form class="form" method="post" action="form-task-1.html">
+        <div class="caption">
+            <span>Login Form</span>
+        </div>
+
+        <div class="btns">
+            <input type="button" value="Login" name="login" id="login">
+            <input type="button" value="Signup" name="signup" id="signup">
+        </div>
+
+        <div class="ediv">
+            <input type="email" placeholder="Email Address" id="email">
+            <span id="res"></span>
+        </div>
+        <script>
+            email1 = document.getElementById('email');
+            span1 = document.getElementById('res');
+            pass1 = document.getElementById('password');
+
+            function validate()
+       {
+                if(email1.value == "")
+                {
+                    alert("Email is required..!");
+                    email1.style.border = "1px solid red";
+                    return false;
+                }
+
+                else
+                {
+                    email1.style.border = "1px solid green"
+                }
+            }
+            function validation()
+            {
+                if(pass1.value=="")
+                {
+                alert('password is required..!');
+                pass1=style.border="1px solid red"
+                }
+                else
+                {
+                    pass1.style.border="1px solid green"
+                }
+            }
+
+
+
+        </script>
+
+        <div class="pdiv">
+            <input type="password" placeholder="Password" id="password">
+        <div class="fpass">
+            <span class="fpass">Forgot Password?</span>
+        </div>
+        </div>
+ 
+        <div class="btn2">
+            <input type="submit" value="Login" id="login2" onclick="return validate(),validation()">
+        </div>
+        <div class="member">
+            <span>Not a member?</span>
+            <span>Signup now</span>
+        </div>
+    </form>
+    <div class="last">
+        @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-task-2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('All\ images/796841.jpg');
+            background-size: cover;
+        }
+
+        div.Main {
+            width: 500px;
+            margin: 20px auto 10px auto;
+            color: aliceblue;
+
+
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            text-shadow: 2px 2px 5px black;
+            font-family: sans-serif;
+        }
+
+        div.register {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            font-size: 17px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            box-shadow: 20px 20px 20px black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        form#register {
+            margin-left: 70px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 17px;
+            font-style: italic;
+
+        }
+
+        #submit {
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 3px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+            width: 110px;
+            box-shadow: 2px 2px 5px black;
+
+        }
+
+        #submit:hover {
+            background-color: rgb(11, 80, 11);
+        }
+
+        #reset:hover {
+            background-color: rgb(109, 108, 108);
+        }
+
+        #reset {
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 3px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+            width: 70px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        input#name {
+            width: 350px;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+          /* Last Div Design By  */
+          .last {
+            /* border: 1px solid white; */
+            color: white;
+            width: 440px;
+            font-size: 13px;
+            margin: 2% auto;
+            display: block;
+
+        }
+
+
+        .last span {
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="styleform.css" type="text/css"> -->
+
+</head>
+
+<body>
+    <div class="Main">
+        <div class="register">
+
+            <legend>
+                <h1>Fill This Form &#128525</h1>
+            </legend>
+            <form action="submit_form.html" id="register" method="post">
+                <label>First name :</label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter Your Firstname" autofocus>
+                <br><br>
+
+                <label>Last name :</label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="Enter Your Lastname">
+                <br><br>
+
+                <label>Your Age :</label>
+                <br>
+                <input type="tel" name="age" id="name" placeholder="How Old are You?" maxlength="2">
+                <br><br>
+
+                <label>Email :</label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter Your Email" title="yahu141@gmail.com">
+                <br><br>
+
+                <label>Mobile Number :</label>
+                <br>
+                <input type="tel" name="Mobile" id="name" placeholder="91+" maxlength="12" title="123-45-678-90">
+                <br><br>
+
+                <label>Gender :</label>
+                <br>
+                <input type="radio" name="gender" id="male">
+                <span id="male">Male</span>
+                <input type="radio" name="gender" id="female">
+                <span id="female">Female</span>
+                <br><br>
+
+                <label>Known language :</label>
+                <br>
+                <input type="checkbox" name="lang" id="hindi">
+                <span id="hindi">Hindi</span>
+
+                <input type="checkbox" name="lang" id="english">
+                <span id="english">English</span>
+
+                <input type="checkbox" name="lang" id="gujrati">
+                <span id="gujrati">Gujrati</span>
+                <br><br>
+
+                <input type="button" value="Submit" name="submit" id="submit">
+                <input type="reset" value="Reset" name="reset" id="reset">
+            </form>
+        </div>
+    </div>
+    <div class="last">
+        @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+    </div>
+
+</body>
+
+</html>

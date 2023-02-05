@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>task-css-2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(#1d313b, #fff);
+            /* background-color:#1d313b; */
+        }
+
+        .main {
+            height: 600px;
+            width: 750px;
+            /* border: 1px solid red; */
+            margin: 40px auto;
+            position: relative;
+            background-image: linear-gradient(to left bottom, #6e8048, #416f4f, #215c52, #18464c, #1d313b);
+        }
+
+        .main h1 {
+            height: 250px;
+            width: 100px;
+            /* border: 1px solid red; */
+            transform: rotate(-90deg);
+            font-size: 250px;
+            position: absolute;
+            bottom: -70px;
+            left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.1);
+            /* z-index: -1; */
+        }
+
+        .image {
+            width: 350px;
+            height: 400px;
+            margin: 100px 0px 0px 80px;
+            background-image: linear-gradient(to left bottom, #bcde71, #68c184, #229f8e, #177985, #305466);
+            /* border: 1px solid red; */
+            position: absolute;
+            z-index: 1;
+            box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .image h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.1);
+            font-size: 180px;
+            margin-top: 150px;
+        }
+
+        .image .icon {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            text-align: center;
+            padding-top: 15px;
+            margin: 10px 0px 0px 210px;
+        }
+
+        .image .icon i {
+            font-size: 22px;
+            color: #18464c;
+        }
+
+        .image img {
+            position: absolute;
+            /* border: 1px solid red; */
+            /* height: 400px; */
+            left: -80px;
+            top: -40px;
+            transform: rotate(30deg);
+            opacity: 0.9;
+
+        }
+
+        .right {
+            width: 350px;
+            height: 450px;
+            /* border: 1px solid red; */
+            margin: 70px 0px 0px 370px;
+            background-color: #fff;
+            position: absolute;
+            z-index: 2;
+            box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .star {
+            /* border: 1px solid red; */
+            margin: 40px 0px 0px 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .star i {
+            color: gold;
+            font-size: 16px;
+        }
+
+        .star span {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .star span sup {
+            font-size: 30px;
+        }
+
+        .name {
+            /* border: 1px solid red; */
+            margin: 20px 0px 0px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .name h2 {
+            letter-spacing: 5px;
+        }
+
+        .name p {
+            font-size: 16px;
+            word-spacing: 5px;
+            letter-spacing: 5px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        .right h4{
+            margin: 30px 0px 0px 30px;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.7);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .maincolor{
+            /* border: 1px solid red; */
+            display: flex;
+            margin: 10px 0px 0px 25px;
+        }
+        .color{
+            height: 25px;
+            width: 25px;
+            margin-left: 15px;
+            border-radius: 50%;
+            /* border: 1px solid red; */
+            position: relative;
+            
+        }
+      
+        #color1{
+            background-color: rgb(77, 166, 222);
+        }
+        #color1::before{
+            content: "";
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background: transparent;
+            position: absolute;
+            left: -6px;
+            top: -5px;
+            border: 3px solid  rgb(77, 166, 222);
+            opacity: 0;
+            transition: 0.5s;
+            z-index: -1;
+        }
+        #color1:hover::before{
+            border: 3px solid  rgb(77, 166, 222);
+            opacity: 1;
+        }
+        #color2{
+            background-color: rgb(247, 159, 159);
+        }
+        #color2::before{
+            content: "";
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: black;
+            background: transparent;
+            position: absolute;
+            left: -6px;
+            top: -5px;
+            border: 3px solid  rgb(247, 159, 159);
+            z-index: -1;
+        }
+       
+        #color3{
+            background-color: lightgreen;
+        }
+        #color3::before{
+            content: "";
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: black;
+            background: transparent;
+            position: absolute;
+            left: -6px;
+            top: -5px;
+            border: 3px solid  lightgreen;
+            opacity: 0;
+            transition: 0.5s;
+            z-index: -1;
+        }
+        #color3:hover::before{
+            border: 3px solid  lightgreen;
+            opacity: 1;
+        }
+        #color4{
+            background-color: rgb(231, 219, 89);
+        }
+        #color4::before{
+            content: "";
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: black;
+            background: transparent;
+            position: absolute;
+            left: -6px;
+            top: -5px;
+            border: 3px solid  rgb(231, 219, 89);
+            opacity: 0;
+            transition: 0.5s;
+            z-index: -1;
+        }
+        #color4:hover::before{
+            border: 3px solid  rgb(231, 219, 89);
+            opacity: 1;
+        }
+        #color5{
+            background-color: rgb(124, 80, 226);
+        }
+        #color5::before{
+            content: "";
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: black;
+            background: transparent;
+            position: absolute;
+            left: -6px;
+            top: -5px;
+            border: 3px solid rgb(124, 80, 226);
+            opacity: 0;
+            transition: 0.5s;
+            z-index: -1;
+        }
+        #color5:hover::before{
+            border: 3px solid rgb(124, 80, 226);
+            opacity: 1;
+        }
+        .right h5{
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.7);
+            margin: 20px 0px 0px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .size{
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 10px 0px 0px 30px;
+            
+        }
+        .size span{
+            margin: 0px 0px 0px 12px;
+            font-size: 22px;
+            font-weight: 900;
+            /* border: 1px solid red; */
+            position: relative;
+        }
+        .size span:nth-child(2)::after{
+            content: "";
+            width: 37px;
+            height: 1px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: rotate(90deg);
+            left: 10px;
+            bottom: 12px;
+
+        }
+        .size span:nth-child(2)::before{
+            content: "";
+            width: 37px;
+            height: 1px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: rotate(90deg);
+            left: -30px;
+            bottom: 12px;
+
+        }
+        button{
+            font-size: 14px;
+            padding: 13px;
+            width: 250px;
+            border-radius: 20px;
+            margin: 20px 0px 0px 50px;
+            background-color:  rgb(18, 152, 236);
+            box-shadow: 4px 4px 12px 0px rgb(18, 152, 236);
+            border: none;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 1s;
+        }
+        button i{
+            /* margin-left: 10px; */
+            font-size: 16px;
+            position: absolute;
+            right: 60px;
+            transition: 1s;
+            opacity: 0;
+
+        }
+        .right h6{
+            margin: 10px 0px 0px 120px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+        button:hover .fa-solid {
+            opacity: 1;
+            right: 10px;
+        }
+       
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>NIKE</h1>
+        <div class="left">
+
+            <div class="image">
+                <div class="icon"><i class="fa-solid fa-share-nodes"></i></div>
+                <img class="img" src="task images/shoes1.png" alt="" height="450px" width="450px">
+                <h2>FAS</h2>
+            </div>
+
+        </div>
+
+
+        <div class="right">
+            <div class="star">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span><sup>$</sup>220</span>
+            </div>
+            <div class="name">
+                <h2>Nike Airmax</h2>
+                <p>Man's Running Shoe</p>
+            </div>
+            <h4>COLOR</h4>
+            <div class="maincolor">
+                <div class="color" id="color1"></div>
+                <div class="color" id="color2"></div>
+                <div class="color" id="color3"></div>
+                <div class="color" id="color4"></div>
+                <div class="color" id="color5"></div>
+            </div>
+            <h5>SIZE</h5>
+            <div class="size">
+                <span>+</span>
+                <span>10</span>
+                <span>-</span>
+            </div>
+            <button type="submit" name="add to cart">ADD TO CART<i class="fa-solid fa-arrow-right"></i></button>
+            <h6> <a href="add to wishlist.html">Add to wishlist</a></h6>
+        </div>
+    </div>
+
+</body>
+
+</html>

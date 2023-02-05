@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>flexbox</title>
+<style>
+ .contenner{
+    height: 344px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    /*                          =============FLEX CONTENNER ============
+    FLEX-DIRECTION.............
+    flex-direction=raw ==> badha box raw direction ma aavi jay (Automatic raw j aave na lakhiye to pan)
+    flex-direction=column ==>badha box ni direction column ma aavi jay
+    flex-direction=raw-reverce ==>(Right Side Thi Chalu Thay) raw direction ma ulta aavi jay
+    flex-direction=column-reverce ==>(Down thi chalu thay)column direction ulta aavi jay*/
+    
+
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    /* FLEX WRAP.............
+    flex-wrap=wrap ==> flex direction wrap kariye to e nani moti screen kariye to box new line ma aavi jay
+    flex-wrap=wrap-reverce ==> flex direction wrap kariye to e nani moti screen kariye to box ulta new line ma aavi jay*/
+    
+     flex-flow: wrap-reverse row;
+     /*FLEX FLOW...............
+     flex-flow=(wrap-reverce ,raw) ==> banne direction ek sathe aapi sakiye flex flow thi*/
+    
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    /*JUSTIFY-CONTENT................ 
+    justify-content=center ==> badha box automatic center ma aavi jay
+    justify-content=space between ==> 2 box vacche same jagya rakhi do par corner thi space ni karo
+    justify-content=space evenly ==>badha vacche same jagya rehvi joiye cornner ma pn
+    justify-content=space around ==>1 box ni aaju baju same jagya banavi do (badga box ni vacche)*/
+    
+    align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: stretch;
+    /*ALIGN-ITEMS...................
+    align-item=center ==> verticaly center thai jay badha box
+    align-item=flex-end ==>badha box bottom ma aavi jay
+    align-item=flex-start ==>(By Default uapar J Hoy)upar start ma aavi jay
+    align-item=stretch ==>evenly badha box vacche jagya same re*/
+ }
+ .item{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 3px;
+ }
+ #item1{
+
+    /*               ==============PERTICLULAR ITEM NE TARGER KARVA MATE=========== */
+    order: 2;
+    /* ORDER ==> koi box ne pachad thi pela lavvu hoy to use thay(j order vadhare hase bija box karta e aagad aavse) */
+
+    flex-grow: 2;
+    /*FLEX-GROW ==> jem jem display nani moti kariye tyare je  box ma order lagaviye elambu thatu jay (jene vadhare number aapiye e vadhare jagya lai le)*/
+
+     flex-shrink: 2;
+     /*FLEX-SHRINHG ==> jem display nani moti thay tyare je box ne shrink aapyu hoy e bija box karta vadhare nani thay*/
+
+     flex-basis: 320px;
+     /*FLEX-BASIS ==> flex basis e width nathi k pachi heaight nathi(j [flex-direction=row/column] ma aapelu hoy e direction ma vadhe)*/
+
+     flex: 2 2 350px;
+     /*FLEX=grow,shrink,basis ==>Short cut for 3 direction ek sathe use mate*/
+
+     align-self: flex-end;
+     align-self: flex-start;
+     align-self: center;
+     /*align-self=center ==>perticular 1 box  center ma aavi jay
+     align-self=flex-end ==> 1 box niche end ma aavi jay
+     align-self=flex-start ==>1 box start ma aavi jay*/
+    }
+ #item2{
+    order: 2;
+
+ }
+ #item3{
+    order: 3;
+ }
+
+
+
+</style>
+</head>
+<body>
+<h1>This is Flexbox Tutorial</h1>
+<div class="contenner">
+    <div class="item" id="item1">First box</div>
+    <div class="item" id="item2">Second box</div>
+    <div class="item" id="item3">Thrid box</div>
+    <div class="item" id="item4">Forth box</div>
+    <div class="item" id="item5">Fifth box</div>
+    <div class="item" id="item6">Sixth box</div>
+</div>
+</body>
+</html>

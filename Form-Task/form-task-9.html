@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-task-9</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("All images/gelexy.jpg");
+            background-size: 100% 800px;
+            background-repeat: no-repeat;
+        }
+
+        .mainform {
+            width: 500px;
+            height: 480px;
+            margin: 80px auto;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .form {
+            width: 500px;
+            height: 480px;
+            position: absolute;
+        }
+
+
+        /* main titel  */
+        .form h1 {
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+            letter-spacing: 5px;
+        }
+
+
+          /* extra input and placeholder  */
+
+          input{
+            background: transparent;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+          input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            font-size: 18px;
+        }
+
+
+        /* text input and (username and password ) */
+       
+        .uname{
+            margin-top: 50px;
+        }
+        .uname input{
+            width: 400px;
+            display: flex;
+            margin: auto;
+            padding: 12px;
+            color: #fff;
+        }
+        .password{
+            margin-top: 25px;
+        }
+        .password input{
+            width: 400px;
+            display: flex;
+            margin: auto;
+            padding: 12px;
+            color: #fff;
+        }
+
+
+
+
+        /* login button   */
+      
+        button{
+            width: 400px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            border: none;
+           display: flexbox;  
+           margin-top: 50px;  
+           margin-left: 50px;
+           cursor: pointer;
+           position: relative;
+           z-index: 0;
+           overflow: hidden;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           letter-spacing: 5px;
+
+           
+        }
+        button::after{
+            content: "";
+            width: 200px;
+            height: 50px;
+            background: rgb(92, 18, 160);
+            transition: 1s;
+            top: 0px;
+            right: -200px;
+            position: absolute;
+            z-index: -1;
+        }
+        button:hover::after{
+            right: 0%;
+        }
+        button::before{
+            content: "";
+            width: 200px;
+            height: 50px;
+            background: rgb(92, 18, 160);
+            transition: 1s;
+            top: 0px;
+            left: -200px;
+            position: absolute;
+            z-index: -1;
+        }
+        button:hover::before{
+            left: 0%;
+        }
+
+
+
+
+        /* last name sign up name  */
+        .last{
+            margin-top: 25px;
+            text-align: center;
+            
+        }
+        .last p{
+            color: #fff;
+        }
+        .last span{
+             color: rgba(255, 255, 255, 0.3);
+             cursor: pointer;
+        }
+        .last span:hover{
+            color:rgb(255, 255, 255) ;
+        }
+
+
+
+        /* last name Design  */
+        .name{
+            color: #fff;
+            width: 900px;
+            margin: 0px auto;
+            font-size: 13px;
+            display: block;
+          text-align: center;
+        }
+        .name span{
+            color: blueviolet;
+        }
+
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="mainform">
+        <form action="submit-html.html" target="_blank" class="form">
+            <h1>Login</h1>
+            <div class="uname">
+                <input type="text" name="username" placeholder="UserName" autofocus>
+            </div>
+            <div class="password">
+                <input type="password" name="password" placeholder="Password" >
+            </div>
+           
+            <button type="submit" >Login</button>
+    
+            <div class="last">
+                <p>Not a Member ? <span>Sign-Up</span></p>
+            </div>
+
+        </form>
+    </div>
+    <div class="name">
+        @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+    </div>
+
+</body>
+
+</html>

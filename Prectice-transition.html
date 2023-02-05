@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css transition</title>
+<style>
+    .contanner{
+        width: 500px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+#box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+
+   /* short cut property For one line*/
+
+    transition: all 1s ease-in-out .2s;
+}
+#box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+
+    transition: all 1s ease-in-out .2s;
+    
+}
+#box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+
+    transition: all 1s ease-in-out .2s;
+    
+}
+
+#box1:hover{
+    background-color: blue ;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    font-size: 30px;
+
+    
+}
+#box2:hover{
+    background-color: rgb(231, 235, 10) ;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    font-size: 30px;
+ 
+    
+}
+#box3:hover{
+    /* transform: rotate(45deg);
+    transform: scale3d(3); */
+    /* transform: skew(45deg); */
+    transform: translate(123px,123px);
+}
+
+
+</style>
+</head>
+<body>
+<h2>This is Transation tutorial</h2>
+<div class="contanner">
+    <div id="box1">
+        This is my box1
+    </div>
+    <div id="box2">
+        This is my box2
+    </div>
+    <div id="box3">
+        This is my box3
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Box and Text Shadow</title>
+</head>
+<style>
+    .contanner{
+        display: flex;
+    }
+    .card{
+        padding: 20px 15px;
+        border: 2px solid red;
+        margin: 20px 15px;
+        background: url('https://images.unsplash.com/photo-1488559281056-61d4495692b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+
+        box-shadow: 10px 10px 8px 8px rgb(63, 134, 134);
+        /*BOX-SHADOW ===> X-AXIS , Y-AXIS , BLUR-RADIUS , SPREAD-RADIUS , COLOUR [BAR NI SIDE SHADOW THAY]*/
+
+        box-shadow: inset 10PX 10PX;
+        /*BOX-SHADOW-INSET ===> X-AXIS ,Y-AXIS ,COLOUR [ANDAR NI SIZE SHADOW THAY]*/
+
+        box-shadow: 10PX 10PX green,10PX 10PX yellow;
+        /* BOX-SHADOW ===> X-AXIS ,Y-AXIS ,COLOUR & X-AXIS ,Y-AXIS ,COLOUR[EK SATHE BE SHADOW AAPVA ] */
+    }
+    .card h2{
+        text-shadow: 3px 3px 2px rgb(77, 84, 107);
+        /*TEXT-SHADOW ===>  X-AXIS , Y-AXIS , BLUR-RADIUS , COLOUR[TEXT NE SHADOW AAPVA MATE]*/
+        font-size: 35px;
+        color: rgb(17, 19, 24);
+    }
+</style>
+<body>
+<div class="contanner">
+    <div class="card" id="card1">
+    <h2>HTML COURSE</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore labore expedita dolorem? Sit fugit vero, nesciunt deleniti nisi quod blanditiis enim similique, inventore, atque tenetur nobis porro molestias dolores asperiores.</p>
+    </div>
+    <div class="card" id="card2">
+       <h2> CSS COURSE</h2>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore labore expedita dolorem? Sit fugit vero, nesciunt deleniti nisi quod blanditiis enim similique, inventore, atque tenetur nobis porro molestias dolores asperiores.</p>
+    </div>
+    <div class="card" id="card3">
+       <h2> JAVA-SCRIPT COURSE</h2>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore labore expedita dolorem? Sit fugit vero, nesciunt deleniti nisi quod blanditiis enim similique, inventore, atque tenetur nobis porro molestias dolores asperiores.</p>
+    </div>
+    <div class="card" id="card4">
+       <h2> PHYTHON COURSE</h2>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore labore expedita dolorem? Sit fugit vero, nesciunt deleniti nisi quod blanditiis enim similique, inventore, atque tenetur nobis porro molestias dolores asperiores.</p>
+    </div>
+</div>
+</body>
+</html>

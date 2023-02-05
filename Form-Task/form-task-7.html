@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-task-7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(90deg, orange 40%, cyan);
+            background-size: 100% 1000px;
+            background-repeat: no-repeat;
+
+        }
+
+        #contanner {
+            width: 900px;
+            height: 500px;
+            margin: 80px auto;
+            background-color: white;
+            border: 1px solid white;
+        }
+        #contanner h1{
+            text-align: center;
+            margin-top: 25px;
+            background: linear-gradient(90deg, orange 40%, cyan);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        /* first name firstname and lastname  */
+        #main{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            margin-top: 30px;           
+        }
+
+
+        /* First name input  */
+        .fname{
+            /* border: 1px solid blue; */
+            margin-left: 40px;
+            width: 360px;
+        }
+        .fname input{
+            width: 360px;
+            font-size: 17px;
+            padding: 7px;
+            border: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+        }
+        .fname input:focus{
+            outline: none;
+            border-bottom-color:rgb(26, 195, 190);
+        }
+
+
+
+     /* lastname input  */
+        .lname{
+            /* border: 1px solid blue; */
+            margin-left: 90px;
+            width: 360px;       
+        }
+        .lname input{
+            width: 360px;
+            font-size: 17px;
+            padding: 7px;
+            border: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+        }
+        .lname input:focus{
+            outline: none;
+            border-bottom-color:rgb(26, 195, 190);
+        }
+
+
+
+
+/* next line website and email  */
+
+        #main2{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            margin-top: 30px;
+            
+        }
+
+
+        /* email input  */
+        .email{
+            /* border: 1px solid blue; */
+            margin-left: 40px;
+            width: 360px;
+        }
+        .email input{
+            width: 360px;
+            font-size: 17px;
+            padding: 7px;
+            border: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+        }
+        .email input:focus{
+            outline: none;
+            border-bottom-color:rgb(26, 195, 190);
+        }
+
+
+
+     /* website input  */
+        .website{
+            /* border: 1px solid blue; */
+            margin-left: 90px;
+            width: 360px;           
+        }
+        .website input{
+            width: 360px;
+            font-size: 17px;
+            padding: 7px;
+            border: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+        }
+        .website input:focus{
+            outline: none;
+            border-bottom-color:rgb(26, 195, 190);
+        }
+
+        /* message input text  */
+        .message{
+            height: 100px;
+            margin-top: 30px;
+            width: 100%;
+        }
+        .message label{
+            display: block;
+            margin-left: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+        .message input{
+            width: 820px;
+            font-size: 17px;
+            padding: 7ps;
+            border: none;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        .message input:focus{
+            outline: none;
+            border-bottom-color:rgb(26, 195, 190);
+        }
+        button{
+            border: 2px solid;
+           border-image: linear-gradient(90deg, orange 40%, cyan);
+           border-image-slice: 1;
+            color:black;
+            font-size: 20px;
+            width: 150px;
+            padding: 10px;
+            margin-left: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+        }
+        button::after{
+            content: "";
+            width: 160px;
+            height: 50px;
+            background: linear-gradient(90deg, orange 40%, cyan);
+            position: absolute;
+            top: 0;
+            left: -160px;
+            transition: 0.9s;
+            z-index: -1;
+
+        }
+        button:hover::after{
+            left: 0%;
+            color: white;
+
+        }
+
+
+             /* Last Div Design By  */
+             .last {
+            /* border: 1px solid white; */
+            color: black;
+            width: 900px;
+            font-size: 13px;
+            margin: 7% auto;
+            display: block;
+          letter-spacing: 5px;
+          text-align: center;
+
+        }
+
+
+        .last span {
+            color: orange;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="contanner">
+        <h1>Resposive Contact us Form </h1>
+        <form action="formsubmit.html">
+            <div id="main">
+            <div class="fname">
+                <input type="text" name="fname" autofocus placeholder="First Name">
+            </div>
+            <div class="lname">
+                <input type="text" name="lname" placeholder="Last Name">
+            </div>
+        </div>
+        <div id="main2">
+            <div class="email">
+                <input type="email" name="email"placeholder="Email Address">
+            </div>
+            <div class="website">
+                <input type="text" name="website" placeholder="Website Name">
+            </div>
+        </div>
+        <div class="message">
+            <label for="message">Write Your Message</label>
+            <input type="text" name="message" placeholder="Write Your Message">
+        </div>
+        <button type="submit">Submit</button>
+        <div class="last">
+            @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+        </div>
+    
+        </form>
+
+    </div>
+</body>
+
+</html>

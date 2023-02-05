@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>task-css-10</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: url("task images/cycle-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            width: 900px;
+            background-color: rgb(201, 195, 195);
+            display: flex;
+            padding: 20px;
+            margin: 0px auto;
+            border-radius: 30px;
+        }
+        .left{
+            width: 300px;
+            background-color: rgb(92, 83, 138);
+          overflow: hidden;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+         
+        }
+      
+        .left h2{
+            font-size: 20px;
+            color: #fff;
+            padding: 50px 0px 0px 50px;
+        }
+        .left p{
+            padding: 20px 0px 0px 50px;
+        }
+        .left p i{
+            border-left: 5px solid  rgb(225, 74, 74);
+            font-size: 20px;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 5px;
+            position: relative;
+            left: 0;
+            transition: 2s;
+        }
+        .left p:hover i{
+            left: 200px;
+        }
+        .left h1{
+            font-size: 300px;
+            padding: 10px 0px 0px 55px;
+            color: rgba(0, 0, 0, 0.2);
+        }
+        .left button{
+            margin: 40px 0px 20px 150px;
+            font-size: 16px;
+            padding: 15px;
+            width: 120px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(225, 74, 74);
+            color: #fff;
+            transition: 1s;
+        }
+        .left button:hover{
+            transform: scale(1.2);
+            box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.3);
+        }
+        .right .bycycle{
+            position: absolute;
+          left: -200px;
+          transition: 2s;
+
+        }
+        .right .bycycle:hover{
+            left: 50px;
+        }
+
+
+        .right{
+            width: 600px;
+            background-color: #fff;
+            position: relative;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .right h1{
+            margin-top: 120px;
+            padding-left: 200px;
+            font-size: 35px;
+        }
+        .wheels{
+            width: 350px;
+            margin: 200px 0px 0px 200px;
+        }
+        .wheels h3{
+            padding-left: 30px;
+        }
+        .type-wheels{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .w1 ,.w2,.w3,.w4{
+            height: 100px;
+            font-size: 12px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .w1:hover ,.w2:hover,.w3:hover,.w4:hover{
+            box-shadow:inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .w1 p,.w2 p,.w3 p,.w4 p{
+            width: 50px;
+            text-align: center;
+            margin-left: 5px;
+            margin-top: 5px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h2>IF Mode</h2>
+            <p> <i class="fa-solid fa-bicycle"></i></p>
+            <h1>IF</h1>
+            <button>Chack Out</button>
+        </div>
+        <div class="right">
+            <h1>Configure the Bike</h1>
+            <img class="bycycle" src="task images/cycle2.gif" alt="" height="50%" width="80%">
+            <div class="wheels">
+                <h3>Wheels</h3>
+
+                <div class="type-wheels">
+                    <div class="w1">
+                        <img src="task images/wheel1.png" alt="" height="60px" width="60px">
+                        <p>WHEEL TYPE 4</p>
+                    </div>
+                    <div class="w2">
+                        <img src="task images/wheel2.png" alt="" height="60px" width="60px">
+                        <p>WHEEL TYPE 3</p>
+                    </div>
+                    <div class="w3">
+                        <img src="task images/wheel3.png" alt="" height="60px" width="60px">
+                        <p>WHEEL TYPE 2</p>
+                    </div>
+                    <div class="w4">
+                        <img src="task images/wheel4.png" alt="" height="60px" width="60px">
+                        <p>WHEEL TYPE 1</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    
+</body>
+</html>

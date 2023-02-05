@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-task-4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            background-image: url("https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1100px;
+            height: 600px;
+            border: 1px solid ;
+            margin: 30px auto;
+           
+        }
+        section h1{
+            width: 850px;
+            height: 50px;
+            font-size: 40px;
+            margin:  20px auto;
+            color: white;
+            letter-spacing: 15px;
+            text-align: center;
+            word-spacing: 25px;
+        }
+      
+
+        .form {
+            /* border: 1px solid red; */
+            width: 950px;
+            height: 450px;
+            margin: 30px auto;
+            color: white;
+            background-color: rgba(28, 227, 227, 0.4);
+
+        }
+
+        ::placeholder {
+            color: white;
+            font-family: 'Zen Dots', cursive;
+            font-size: 13px;
+        }
+
+        .main {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .firstname {
+            width: 450px;
+            margin-left: 25px;
+            margin-top: 25px;
+
+        }
+
+        .firstname input {
+            background-color: transparent;
+            padding: 5px;
+            border: 1px solid white;
+            margin-left: 60px;
+
+        }
+
+        .firstname label {
+            font-family: 'Zen Dots', cursive;
+            font-size: 15px;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+
+        .lastname {
+            width: 450px;
+            margin-left: 15px;
+            margin-top: 25px;
+        }
+
+        .lastname input {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 85px;
+            border: 1px solid white;
+        }
+
+        .lastname label {
+            font-family: 'Zen Dots', cursive;
+            font-size: 15px;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+
+
+        .email {
+            width: 450px;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .email input {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 60px;
+            border: 1px solid white;
+        }
+
+        .email label {
+            font-size: 15px;
+            font-family: 'Zen Dots', cursive;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+
+        .phone {
+            width: 450px;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .phone .input1 {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 60px;
+            border: 1px solid white;
+            width: 45px;
+
+        }
+
+        .phone .input2 {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 5px;
+            border: 1px solid white;
+            width: 110px;
+        }
+
+        .phone label {
+            font-size: 15px;
+            font-family: 'Zen Dots', cursive;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+
+        .bilingaddress {
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .bilingaddress input {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 60px;
+            border: 1px solid white;
+            width: 670px;
+
+        }
+
+        .bilingaddress label {
+            font-size: 15px;
+            font-family: 'Zen Dots', cursive;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+
+        .youraddress {
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .youraddress input {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 60px;
+            border: 1px solid white;
+            width: 670px;
+
+        }
+
+        .youraddress label {
+            font-size: 15px;
+            font-family: 'Zen Dots', cursive;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+
+        .main2 {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .city {
+            width: 450px;
+            margin-left: 25px;
+        }
+
+        .city input {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 60px;
+            border: 1px solid white;
+
+        }
+
+        .city label {
+            font-family: 'Zen Dots', cursive;
+            font-size: 15px;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+
+        .state {
+            width: 450px;
+            margin-left: 15px;
+        }
+
+        .state input {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 85px;
+            border: 1px solid white;
+        }
+
+        .state label {
+            font-family: 'Zen Dots', cursive;
+            font-size: 15px;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+        .main3 {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .zipcode {
+            width: 450px;
+            margin-left: 25px;
+        }
+
+        .zipcode input {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 60px;
+            border: 1px solid white;
+
+        }
+
+        .zipcode label {
+            font-family: 'Zen Dots', cursive;
+            font-size: 15px;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+
+        .country {
+            width: 450px;
+            margin-left: 15px;
+        }
+
+        .country select {
+            background-color: transparent;
+            padding: 5px;
+            margin-left: 85px;
+            border: 1px solid white;
+            color: white;
+        }
+        .country select option{
+          background-color: black;
+        }
+        .country label {
+            font-family: 'Zen Dots', cursive;
+            font-size: 15px;
+            display: block;
+            width: 150px;
+            float: left;
+        }
+        .btns{
+            width: 350px;
+            margin:30px 230px;
+        }
+        .btns button:first-child{
+            padding: 7px;
+            font-size: 12px;
+            font-family: 'Zen Dots', cursive;
+            width: 150px;
+            background-color: rgb(60, 60, 233);
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+
+        }
+        .btns button:last-child{
+            padding: 7px;
+            font-family: 'Zen Dots', cursive;
+            font-size: 12px;
+            width: 150px;
+            margin-left: 20px;
+            background-color: coral;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+           /* Last Div Design By  */
+           .last {
+            /* border: 1px solid white; */
+            color: white;
+            width: 1000px;
+            font-size: 13px;
+            margin: 2% auto;
+            display: block;
+          letter-spacing: 7px;
+          text-align: center;
+
+        }
+
+
+        .last span {
+            color: aqua;
+            font-size: 16px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section>
+       
+          <h1>  PRODUCT ORDER FORM</h1>
+        
+        <form class="form" action="submit.html">
+            <div class="main">
+                <div class="firstname">
+                    <label for="fname">FIRST NAME:</label>
+                    <input type="text" name="fname" placeholder="   Your first name" autofocus>
+                </div>
+                <div class="lastname">
+                    <label for="lname" class="textarea2">LAST NAME :</label>
+                    <input type="text" name="lname" placeholder="   Your last name">
+                </div>
+            </div>
+
+
+
+            <div class="email">
+                <label for="email">EMAIL ADDRESS:</label>
+                <input type="email" name="email" placeholder="   mail@example.com">
+            </div>
+
+            <div class="phone">
+                <label for="phone">PHONE NUMBER:</label>
+                <input class="input1" type="tel" name=phoneid placeholder="  +91">
+                <input class="input2" type="tel" name="phone" placeholder="  ??????????">
+            </div>
+
+            <div class="bilingaddress">
+                <label for="b-address">BILLING ADDRESS:</label>
+                <input type="text" name="b-address" placeholder="   Billing Address">
+            </div>
+
+            <div class="youraddress">
+                <label for="y-address">YOUR ADDRESS:</label>
+                <input type="text" name="y-address" placeholder="   Your address">
+            </div>
+
+            <div class="main2">
+                <div class="city">
+                    <label for="city">CITY:</label>
+                    <input type="text" class="textarea" placeholder="Your City" name="city">
+                </div>
+                <div class="state">
+                    <label for="state">STATE/PROVINCE:</label>
+                    <input type="text" name="state" class="textarea" placeholder="Your State or Privince">
+                </div>
+            </div>
+
+            <div class="main3">
+                <div class="zipcode">
+                    <label for="Zip code">ZIP CODE:</label>
+                    <input type="text" placeholder="Zip Code" class="textarea" name="zipcode">
+                </div>
+                <div class="country">
+                    <label for="country">COUNTRY:</label>
+                    <select name="country">
+                        <option value="India" selected>INDIA</option>
+                        <option value="USA">USA</option>
+                        <option value="PAKISTAN">PAKISTAN</option>
+                        <option value="CHAINA">CHAINA</option>
+                        <option value="SHREELANKA">SHREELANKA</option>
+                        <option value="CANEDA">CANEDA</option>
+                        <option value="AUSTRALIA">AUSTRALIA</option>
+                        <option value="NEWZILAND">NEWZILAND</option>
+                        <option value="ENGLAND">ENGLAND</option>
+                        <option value="WESTENDIS">WESTENDIS</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="btns">
+                <button type="submit"> PLACE ORDER</button>
+                <button type="reset"> RESET</button>
+            </div>
+        </form>
+        <div class="last">
+            @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+        </div>
+
+    </section>
+</body>
+
+</html>

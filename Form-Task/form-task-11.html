@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-task-11</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:  linear-gradient(#e66465, #9198e5);
+            background-size: 100% 800px;
+            background-repeat: no-repeat;
+        }
+        .main{
+            background-image: url("All images/party2.jpg");
+            background-repeat: no-repeat;
+            background-size: 325px 550px;
+            border: 2px solid white;
+            /* background-color: black; */
+            width: 650px;
+            height: 550px;
+            margin: 50px auto 0px auto;
+        }
+        .form{
+            width: 325px;
+            height: 550px;
+            margin-left: 325px;
+            
+        }
+        input{
+            border: none;
+            border-bottom: 3px solid rgb(255, 255, 255);
+            background: transparent;
+        }
+        ::placeholder{
+            color: #fff;
+        }
+        input:focus{
+            outline: none;
+        }
+        .form h2{
+            text-align: center;
+            margin-top: 50px;
+            color: #fff;
+        }
+        .name input{
+            margin-left: 30px;
+            width: 250px;
+            margin-top: 50px;
+        }
+        .birthdate input{
+            width: 250px;
+            margin-left: 30px;
+            margin-top: 40px;
+            color: #fff;
+        }
+       
+        .gender select{
+            width: 250px;
+            margin-left: 30px;
+            margin-top: 40px;
+            border: none;
+            border-bottom: 3px solid rgb(255, 255, 255);
+            background: transparent;
+            color: #fff;
+        }
+        .gender select:focus{
+          outline: none;
+        }
+        .gender option{
+            background-color: black ;
+        }
+        .email input{
+            width: 250px;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        .phone input{
+            width: 250px;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        .btn1{
+            margin-top: 50px;
+            margin-left: 30px;
+            padding: 10px;
+            width: 120px;
+            color: #fff;
+            background-image: linear-gradient(#e66465, #9198e5);
+            border: 2px solid #fff;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .btn1::before{
+            content: "";
+            width: 10px;
+            height: 70px;
+            top: -15px;
+            left: -30px;
+            transform: rotate(-30deg);
+            transition: 0.5s;
+            background-color: #fff;
+            position: absolute;
+        }
+        .btn1:hover:before{
+            left: 150px;
+        }
+        .btn2{
+            padding: 10px;
+            width: 120px;
+            margin-left: 10px;
+            color: #fff;
+            background-image: linear-gradient(#e66465, #9198e5);
+            border: 2px solid #fff;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .btn2::before{
+            content: "";
+            width: 10px;
+            height: 70px;
+            top: -15px;
+            left: -30px;
+            transform: rotate(-30deg);
+            transition: 0.5s;
+            background-color: #fff;
+            position: absolute;
+        }
+        .btn2:hover:before{
+            left: 150px;
+        }
+
+        /* last name  */
+        .names{
+            color: #fff;
+            width: 900px;
+            margin: 20px auto;
+            font-size: 13px;
+            display: block;
+          text-align: center;
+        }
+        .names span{
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <h2>Registration Info</h2>
+            <div class="name">
+                <input type="text" name="name" placeholder="Name" autofocus>
+            </div>
+            <div class="birthdate">
+                <input type="date" name="birth" placeholder="kjasndoiasknc ," >
+            </div>
+            <div class="gender">
+                <select name="gender">
+                    <option value="Male" disabled selected>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Male">Female</option>
+                    <option value="Male">Other</option>
+                </select>
+            </div>
+            <div class="email">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="phone">
+                <input type="tel" name="phone" placeholder="Phone" maxlength="10">
+            </div>
+            <button class="btn1" type="submit" name="submit">Submit</button>
+            <button class="btn2" type="reset" name="submit">Reset</button>
+        </div>
+    </div>
+    <div class="names">
+        @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+    </div>
+   
+</body>
+</html>

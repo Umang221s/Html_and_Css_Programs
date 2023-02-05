@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>keyfrems and animations</title>
+    <style>
+        .contanner {
+            display: flex;
+            background-color: yellow;
+
+        }
+
+        .box {
+            background-color: gray;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: umang1; */
+            animation-name: umang2;
+            /* animation name nakhvanu (game te nakhi sakay)  */
+            animation-duration: 10s;
+            /* animation ketli secound challavvu che e   */
+            animation-iteration-count: 3;
+            /*infinate*/
+            /* animation ketli var chalavvu che  */
+            animation-fill-mode: forwards;
+            /* animation kevu challavu che e karva mare(forwards-end thai ne rai jay)(alternate-chali ne pachu aavi ne puru thay) */
+            animation-timing-function: ease-in-out;
+            /* animation kevi rite chalavvu che (pela slow pachi fast pachi slow)  */
+            animation-delay: 3s;
+            /* animation ketla time pachi chalu thavu joiye e nakhvanu  */
+            animation-direction: reverse;
+            /* animation kevi rite chalavvu che undhu sidhu kai rite  */
+            
+            animation: umang1 5s ease-in 2s 10 backwards;
+            /*SHORT CUT KEYS
+             ===>name , duration , timeing , delay ,itretion-count , fill-mode */
+        }
+
+        @keyframes umang2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        @keyframes umang1 {
+            form {
+                width: 200px;
+            }
+
+            to {
+                width: 1500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanner">
+        <div class="box">
+            This is my Box
+        </div>
+    </div>
+</body>
+
+</html>

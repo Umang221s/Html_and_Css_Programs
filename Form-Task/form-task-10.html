@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>form-task-10</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(76, 76, 228);
+        }
+
+        .formdiv {
+            border: 1px solid white;    
+             box-shadow: 10px 25px 35px 5px rgb(4, 4, 90) ;
+            width: 900px;
+            height: 400px;
+            margin: 120px auto 0px auto;
+            /* background-color: #fff; */
+            /* background-image: url("All images/gelexy.jpg");
+            background-repeat: no-repeat;
+            background-size: 450px 450px; */
+            background-color: #fff;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            position: relative;
+       
+        }
+        .image{
+            width: 450px;   
+            box-sizing: border-box;
+        }
+
+        .divaddress {
+            width: 450px;
+            color: #fff;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            border: 1px solid white;
+            transition: 1s;
+        }
+         .image:hover .divaddress{
+            top: 100px;
+            opacity: 1;
+      
+       }
+
+        .divaddress span {
+            font-size: 25px;
+            margin-left: 100px;
+        }
+
+        .divaddress p {
+            font-size: 20px;
+            width: 300px;
+            margin: 20px auto 0px auto;
+            text-align: center;
+        }
+
+        .divemail {
+            width: 450px;
+            color: #fff;
+            position: absolute;
+            bottom: 0px;
+            opacity: 0;
+            border: 1px solid #fff;
+            transition: 1s;
+        }
+        .image:hover .divemail{
+            bottom: 130px;
+            opacity: 1;
+        }
+
+        .divemail span {
+            font-size: 25px;
+            margin-left: 100px;
+        }
+
+        .divemail p {
+            font-size: 20px;
+            width: 300px;
+            margin: 20px auto 0px auto;
+            text-align: center;
+        }
+
+        .fa-solid {
+            margin-right: 20px;
+        }
+        .form{
+            width: 450px;
+            height: 400px;
+           position: absolute;
+           top: 0;
+           left: 450px;
+        }
+        input{
+            border-radius: 15px;
+            width: 350px;
+            padding: 7px;
+            border: 1px solid black;
+        }
+        .form h1{
+            text-align: center;
+            margin-top: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .name{
+            margin-top: 25px;
+            margin-left: 50px;
+        }
+        .email{
+            margin-top: 25px;
+            margin-left: 50px;
+        }
+        .query{
+            margin-top: 25px;
+            margin-left: 50px;
+        }
+       .query textarea{
+        border-radius: 15px;
+       }
+       .query textarea::placeholder{
+        padding-top: 10px;
+        padding-left: 5px;
+        font-size: 17px;
+       }
+        button{
+            width: 100px;
+            padding: 7px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(7, 107, 7);
+            color: #fff;
+            margin: 20px 50px;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+        }
+        button::after{
+            content: "";
+            width: 10px;
+            height: 70px;
+            top: -15px;
+            left: -15px;
+            background-color: #fff;
+            position: absolute;
+            transform: rotate(-40deg);
+            z-index: -1;
+            transition: 0.5s;
+
+        }
+        button:hover::after{
+            left: 120px;
+        }
+
+          /* last name Design  */
+          .names{
+            color: #fff;
+            width: 900px;
+            margin:  20px auto;
+            font-size: 13px;
+            display: block;
+          text-align: center;
+        }
+        .names span{
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="formdiv">
+        <div class="image">
+            <img src="All images/gelexy.jpg" alt="" height="400px" width="450px">
+       
+        <div class="divaddress">
+            <span><i class="fa-solid fa-location-dot"></i>ADDRESS</span>
+            <p>321,Street Name,Country</p>
+        </div>
+        <div class="divemail">
+            <span><i class="fa-solid fa-envelope"></i>EMAIL</span>
+            <p>Yourmail@domain.com</p>
+        </div>
+    </div>
+
+
+
+        <div class="form">
+            <h1>Get in Touch</h1>
+            <div class="name">
+                <input type="text" name="name" placeholder="Enter Your Name" autofocus>
+            </div>
+            <div class="email">
+                <input type="email" name="email" placeholder="Enter Your Email">
+            </div>
+            <div class="query">
+                <!-- <input type="text" name="query" placeholder="Enter Your Query"> -->
+                <textarea name="text" cols="41" rows="7" placeholder="Enter Your Query"></textarea>
+            </div>
+            <button type="submit">SEND</button>
+
+        </div>
+    </div>
+    <div class="names">
+        @2022 Transparant sign in Form. All right reserved | Design by <span>Umang savsani</span>
+    </div>
+
+</body>
+
+</html>

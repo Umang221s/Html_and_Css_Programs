@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra-css-task-15</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          background-image: linear-gradient(white,blueviolet);
+            background-size: 700px 100%;
+        }
+        .main{
+            height: 300px;
+            width: 900px;
+            background-image: linear-gradient(to top,white,blueviolet);
+            margin: 160px auto;
+            position: relative;
+            border-radius: 30px;
+            opacity: 0.8;
+        }
+        .main h1{
+            position: absolute;
+            text-align: center;
+            margin: 80px 0px 0px 120px ;
+            font-size: 100px;
+            font-family: cursive;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        .one{
+            background-image: url("task images/ball1.png");
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            animation: first 3s infinite;
+        }
+        .two{
+            background-image: url("task images/ball2.png");
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 60px;
+            animation: secound 3s infinite;
+        }
+        .three{
+            background-image: url("task images/ball3.png");
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 120px;
+            animation: third 3s infinite;
+        }
+        .four{
+            background-image: url("task images/ball4.png");
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 180px;
+            animation: forth 3s infinite;
+        }
+        .five{
+            background-image: url("task images/ball5.png");
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 240px;
+            animation: fifth 3s infinite;
+        }
+        @keyframes first{
+            0%{
+                translate: 0px;
+            }
+            25%{
+               translate: 200px 250px  ;
+            }
+            50%{
+                translate: 400px 0px;
+            }
+            75%{
+                translate: 600px 250px;
+            }
+            100%{
+                translate: 850px 0px;
+            }
+        }
+        @keyframes secound{
+            0%{
+                translate: 0;
+            }
+            50%{
+                translate: 400px 180px;
+            }
+            100%{
+                translate: 850px 0px;
+            }
+        }
+        @keyframes third{
+            0%{
+                translate: 0;
+            }
+            100%{
+                translate: 850px 0px;
+            }
+        }
+        @keyframes forth{
+            0%{
+                translate: 0;
+            }
+            50%{
+                translate: 400px -180px;
+            }
+            100%{
+                translate: 850px 0px;
+            }
+        }
+        @keyframes fifth{
+            0%{
+                translate: 0px;
+            }
+            25%{
+               translate: 200px -240px  ;
+            }
+            50%{
+                translate: 400px 0px;
+            }
+            75%{
+                translate: 600px -240px;
+            }
+            100%{
+                translate: 850px 0px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Ball Jumpping</h1>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+    </div>
+    
+</body>
+</html>

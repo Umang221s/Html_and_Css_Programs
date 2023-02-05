@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-css-7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: url("task images/juice-background1.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .main{
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 800px;
+            margin: 150px auto;
+            box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4),-5px -5px 10px rgba(255, 255, 255, 0.4);
+            transition: 1s;
+        }
+        .main:hover{
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .first{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .first span:first-child{
+            font-size: 20px;
+            font-weight: 900;
+            color: #fff;
+        }
+        .first span a{
+            color: red;
+        }
+        .secound{
+            display: flex;
+        }
+        .box{
+            width: 25%;
+            object-fit: inherit;
+        }
+        #name{
+           padding: 5px;
+        }
+        #name h2{
+            text-align: center;
+            margin-top: 30px;
+            color: #fff;
+        }
+        #name p{
+            margin-left: 15px;
+            color: #fff;
+        }
+        #name img{
+            margin-left: 15px;
+
+        }
+        #count{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        #count p{
+            display: flex;
+        }
+        #count span{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(191, 191, 191);
+            text-align: center;
+            border-radius: 50%;
+            font-size: 30px;
+        }
+        #count span:nth-child(2){
+            background-color: transparent;
+            font-size: 25px;
+        }
+        #price{
+            padding: 20px;
+        }
+      #price h3{
+        text-align: end;
+        margin-top: 20px;
+        font-size: 25px;
+        color: #fff;
+      }
+      #price p{
+        text-align: end;
+      }
+      #price p a{
+        color: rgb(20, 180, 229);
+      }
+      .third{
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <span>Shopping Cart</span>
+            <span><a href="">Remove all</a></span>
+        </div>
+        <div class="secound" >
+            <div class="box" id="image">
+                <img src="task images/juice1.png" alt="" height="90%" width="90%">
+            
+            </div>
+            <div class="box" id="name">
+                <h2>Orange Juice</h2>
+                <p>250ml</p>
+                <img src="task images/veg-symbol.png" alt="" height="30px" width="30px">
+            </div>
+            <div class="box" id="count">
+               <p> <span>+</span><span> 2</span><span>-</span></p>
+            </div>
+            <div class="box" id="price">
+                <h3>$2.99</h3>
+                <p><a href="">Save for later</a></p>
+                <p><a href="">Remove</a></p>
+            </div>
+        </div>
+        <div class="third">
+            <div class="box" id="image">
+                <img src="task images/juice2.png" alt="" height="100%" width="100%">
+            
+            </div>
+            <div class="box" id="name">
+                <h2>Apple Juice</h2>
+                <p>250ml</p>
+                <img src="task images/veg-symbol.png" alt="" height="30px" width="30px">
+            </div>
+            <div class="box" id="count">
+               <p> <span>+</span><span> 1</span><span>-</span></p>
+            </div>
+            <div class="box" id="price">
+                <h3>$3.19</h3>
+                <p><a href="">Save for later</a></p>
+                <p><a href="">Remove</a></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
